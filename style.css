@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Nunito',sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5% ;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align:center;
+    padding: 2.4rem 0;
+}
+.heading span{
+    font-size:3.5rem;
+    background-color:rgba(255, 174, 0, 0.2);
+    color:darkorange;
+    border-radius:0.5rem;
+    padding:0.3rem 1.5rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #092635;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.2rem 9%;
+}
+header .logo{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: darkorange;
+    text-transform: uppercase;
+    font-family: montserrat;
+}
+header .logo span{
+    color: #fff;
+    text-transform: none;
+    font-family: montserrat;
+}
+header .logo i{
+    color: rgb(235, 75, 26);
+    font-size: 1.7rem;
+}
+.navbar a{
+    position:relative;
+    color: #fff;
+    padding: 1.4rem;
+    font-size: 2rem;
+    margin: 0.8rem;
+    font-weight: 600;
+    transition: margin-bottom 2px ease-in-out .3s;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.2rem ;
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    transform-origin:right ;
+    transform: scaleX(0);
+    transition: transform 0.10s;
+    background-color: darkorange;
+}
+
+header .navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin:left ;
+    border-bottom: 2px solid darkorange;
+}
+
+header .headeraIcons i{
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 1rem;
+}
+header .headeraIcons i:hover{
+    color: darkorange;
+}
+header .search-bar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background-color: #092635;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+}
+header .search-bar.active{
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+}
+header .search-bar #searchBar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #092635;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+}
+header .search-bar label{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+}
+header .search-bar label:hover{
+    color: darkorange;
+}
+
+#menu-bar{
+    color: #fff;
+    border:0.1rem solid #fff;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper{
+    position: absolute;
+   
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.7);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2s ease;
+    overflow: hidden;
+}
+
+/* #login .form-box{
+    background-color: #fff;
+    width: 100%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 35rem;
+} */
+ .form-box{
+    background-color: #fff;
+    width: 100%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 35rem;
+}
+.wrapper .iconclose{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: orange;
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all ease-in-out 0.3s;
+}
+.wrapper .iconclose:hover{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: darkorange;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.wrapper .form-box h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkorange;
+    padding: 1rem 0;
+    border-bottom: 0.2rem solid darkorange;
+}
+.input-boxL{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin: 2rem 0;
+    
+}
+.input-boxL label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    font-weight: 600;
+    pointer-events: none;
+    color: #333;
+    padding-left:3rem;
+}
+.input-boxL input{
+    background-color: #cdcddb;
+   height: 2.5rem;
+   width:60%;
+   border-radius: 0.2rem;
+   border:0.1rem solid #03131b;
+   color: #000;
+   margin-left: 7rem;
+   font-weight: 600;
+   padding: 0 1.2rem 0 0.5rem;
+   outline: none;
+}
+.input-boxL .icon,.icon i{
+    font-size: 2rem;
+    color: darkorange;
+}
+.remainder-forgot{
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    margin: -1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.remainder-forgot label input{
+    accent-color: orange;
+    color: #000;
+    margin-right: 0.8rem;
+}
+.remainder-forgot a{
+    text-decoration: none;
+    color: #155377;
+    font-size: 1.3rem;
+}
+.remainder-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper .btnLogin{
+    background-color: darkorange;
+    height: 2.5rem;
+    width: 8rem;
+    border: 0.11rem solid #f07740;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 2px 4px 8px rgb(5, 5, 5);
+    transition: all ease-in-out 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .btnLogin:hover{
+    background-color: rgb(235, 131, 13);
+    box-shadow: 0px 4px 10px rgb(41, 39, 39);
+    height: 2.4rem;
+    width: 7.5rem;
+    font-size: 1.4rem;
+}
+.login-register{
+    text-align: center;
+    margin-top: 1.8rem;
+}
+.login-register p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+}
+.login-register a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orange;
+    margin-left: 0.4rem;
+}
+.login-register a:hover{
+    font-size: 1.6rem;
+    text-decoration: 0.2rem solid underline;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.home .btnSearch{
+    background-color: darkorange;
+    height: 4.3rem;
+    width: 21rem;
+    border: 0.11rem solid #f07740;
+    border-radius: 0.7rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 4px 8px 16px rgb(5, 5, 5);
+    transition: all ease-in-out 0.5s;
+    
+} 
+.home .btnSearch:hover{
+    background-color: rgb(235, 131, 13);
+    box-shadow: 4px 6px 16px rgb(41, 39, 39);
+    height: 4rem;
+    width: 20rem;
+    font-size: 1.5rem;
+} 
+
+.home .content{
+    text-align: center;
+}
+.home .content h3{
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgb(53, 50, 50);
+}
+.home .content p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-shadow: 0 0.3rem 0.5rem rgb(24, 22, 22);
+}
+.home .video-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+.home .controls .vid-btn.active{
+    background-color: darkorange;
+}
+
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.gallery .box-container .box{
+    flex:1 1 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+   
+}
+
+.gallery .box-container .box img{
+    height: 22rem !important;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+   
+}
+.gallery .box-container .box:hover img{
+    
+  transform: scale(1.1);
+  
+}
+
+.btn{
+    background-color: darkorange;
+    height: 3rem;
+    width: 10rem;
+    border: 0.11rem solid #f07740;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 2px 4px 8px rgb(5, 5, 5);
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.btn:hover{
+    background-color: rgb(235, 131, 13);
+    box-shadow: 0px 4px 10px rgb(41, 39, 39);
+    height: 3.2rem;
+    width: 10.5rem;
+    font-size: 1.56rem;
+}
+.box .content{
+    padding: 1rem ;
+    
+}
+.box .content h1{
+    font-size: 2.5rem;
+    margin-top: 0.8rem;
+    color: #112;
+}
+
+.gallery .box-container .box .content h3{
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+.gallery .box-container .box .content h3 i{
+    color:orange
+}
+.gallery .box-container .box .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.gallery .box-container .box .content .stars i{
+    color:orange;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+.services .ser-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:5rem;
+} 
+
+.services .ser-container .ser-box{
+    flex: 1 1 30;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow:  0 1rem 2rem rgba(0,0,0,.2);
+}
+.services .ser-container .ser-box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color:orange;
+}
+.services .ser-container .ser-box h3{
+    padding-top: 0.8rem;
+    font-size: 3.2rem;
+    color:#333;
+}
+
+.services .ser-container .ser-box p{
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color:#666;
+}
+.services .ser-container .ser-box:hover{
+    box-shadow: 0 1rem 2rem rgb(223, 158, 39);
+}
+
+.review .review-slider{
+    padding-bottom: 5rem;
+    
+}
+.review .box{
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow:  0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 0.5rem;
+}
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review .box h3{
+    color:#333;
+    font-size: 3rem;
+}
+.review .box p{
+    color: #666;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.review .box .stars{
+    font-size: 1.4rem;
+    color: orange;
+}
+.contact .con-page{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.con-page .image img{
+    height: 45rem;
+    width: 38rem;
+    margin-right: 5rem ;
+}
+
+.btn-con{
+    background-color: darkorange;
+    height: 4rem;
+    width: 14rem;
+    border: 0.11rem solid #f07740;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 2px 4px 8px rgb(5, 5, 5);
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn-con:hover{
+    background-color: rgb(235, 131, 13);
+    box-shadow: 0px 4px 10px rgb(41, 39, 39);
+    height: 4.2rem;
+    width: 14.5rem;
+    font-size: 1.56rem;
+}
+.contact .con-page form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.contact .con-page form .input-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+}
+
+.contact .con-page form .input-box input{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background-color:#f7f7f8;
+}
+.contact .con-page form  textarea{
+    resize: none;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background-color:#f7f7f8;
+}
+.fa-brands {
+    color: #5a5757;
+    margin: 20px 10px;
+  }
+  
+  .fa-envelope {
+    color: #5a5757;
+    margin: 20px 10px;
+  } 
+  .action{
+    background-color: rgb(255, 196, 0);
+    margin-top: 5rem;
+  }
+  .action .content{
+    background-color: rgb(255, 196, 0);
+    margin: 2rem;
+    text-align: center;
+    
+}
+.action .content h3{
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgb(53, 50, 50);
+}
+.action .content p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-shadow: 0 0.3rem 0.5rem rgb(24, 22, 22);
+}
+.action .btnSearch{
+    background-color: darkorange;
+    height: 4.3rem;
+    width: 21rem;
+    border: 0.11rem solid #f07740;
+    border-radius: 0.7rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 4px 8px 16px rgb(5, 5, 5);
+    transition: all ease-in-out 0.5s;
+    
+} 
+.action .btnSearch:hover{
+    background-color: rgb(235, 131, 13);
+    box-shadow: 4px 6px 16px rgb(41, 39, 39);
+    height: 4rem;
+    width: 20rem;
+    font-size: 1.5rem;
+} 
+
+.footer{
+    text-align: center;
+   padding: 5rem;
+    
+   
+}
+.footer a p{
+    font-size: 2rem;
+    color: #717171;
+    transition: all 0.2s ease-in-out;
+}
+.footer a p{
+    font-size: 2.1rem;
+    color: #646262;
+}
+.footer a i{
+    font-size: 3rem;
+    padding: 0.5rem;
+    transition: all 0.2s ease-in-out;
+ }
+ .footer a i:hover{
+    font-size: 3.2rem;
+    color: #717171;
+ }
+
+/* Pages css */
+
+.info{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.info .img img{
+    margin-top: 10rem;
+    height: 30rem;
+    border-radius: 5rem 0 5rem 0;
+    box-shadow: 0 2rem 4rem rgb(248, 185, 69);
+}
+.info .cardInfo{
+   margin-top: 5rem;
+   height: 13rem;
+    background-color: rgb(255, 196, 0);
+    padding: 3rem;
+    border-radius: 3rem;
+}
+.info .cardInfo h2{
+    color: #333;
+    font-size: 1.7rem;
+}
+
+.page-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.page-container .Page-box{
+    flex:1 1 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+   
+}
+
+.page-container .Page-box img{
+    height: 22rem !important;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+   
+}
+.page-container .Page-box:hover img{
+    
+  transform: scale(1.1);
+  
+}
+
+.btn{
+    background-color: darkorange;
+    height: 3rem;
+    width: 10rem;
+    border: 0.11rem solid #f07740;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 2px 4px 8px rgb(5, 5, 5);
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.btn:hover{
+    background-color: rgb(235, 131, 13);
+    box-shadow: 0px 4px 10px rgb(41, 39, 39);
+    height: 3.2rem;
+    width: 10.5rem;
+    font-size: 1.56rem;
+}
+.Page-box .content{
+    padding: 1rem ;
+    
+}
+.Page-box .content h1{
+    font-size: 2.5rem;
+    margin-top: 0.8rem;
+    color: #112;
+}
+
+.page-container .Page-box .content h3{
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+.page-container .Page-box .content h3 i{
+    color:orange
+}
+.page-container .Page-box .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.page-container .Page-box .content .stars i{
+    color:orange;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+del{
+    text-decoration: line-through;
+}
+
+.premium h1{
+  
+    text-align: center;
+    border-bottom: 0.2rem solid darkorange;
+}
+.premium h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: orange;
+}
+.premium h3{
+    padding: 1rem;
+    
+}
+/* Extra information */
+.extraInfo{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+}
+.exinfo{
+    font-size: 2rem;  
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 5rem;   
+    text-align: center;
+}
+.exinfo i{
+    color: darkorange;
+}
+
+/* media queries */
+@media (max-width: 1200px)
+{
+    html{
+        font-size: 55% ;
+    }
+}
+
+@media (max-width: 991px)
+{
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #092635;
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+    }
+    header .navbar a{
+        display: block;
+        border-radius: 0.5rem;
+        padding: 1.2rem;
+        margin: 1.2rem 0;
+        background-color: #03131b;
+    }
+}
+@media (max-width: 450px)
+{
+    html{
+        font-size: 50% ;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+    .con-page .image{
+        flex: 1 1 25rem;
+    }
+    .con-page .image img{
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+    .contact .con-page form{
+        flex: 1 1 25rem;
+    }
+    .info .img img{
+        margin-top: auto;
+    }
+    .info .cardInfo{
+        height: auto;
+    }
+}
+
+
+

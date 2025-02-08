@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo1.png">
+    <title>लॉग-इन</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+     
+      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <a href="#"class="logo">प्रवास<span>आनंदाचा <sup><i class="fa-solid fa-paper-plane"></i></sup></span></a>
+    
+        <nav class="navbar">
+          <a href="index.htm" class="navActive active">मुखपृष्ठ</a>
+          <a href="index.htm" class="navActive">गॅलरी</a>
+          <a href="index.htm" class="navActive">सेवा</a>
+          <a href="index.htm" class="navActive">अधिमूल्य</a>
+          <a href="index.htm" class="navActive">परीक्षण</a>
+          <a href="index.htm" class="navActive">संपर्क</a>
+        </nav>
+        <div class="navbar-container">
+          <a href="#home" id="navbar-slider"></a>
+        </div>
+    
+        <div class="headeraIcons">
+          <i class="fas fa-search" id="search-btn"></i>
+         <a href="signup.htm"><i class="fas fa-user" id="login-btn"></i></a> 
+        </div>
+    
+        <form action="" class="search-bar">
+          <input type="search" id="searchBar" placeholder="तुमचं पर्यटक स्थळ शोधा . . .">
+          <label for="searchBar" class ="fas fa-search"></label>
+        </form>
+    
+      </header>
+          
+      <div class="wrapper">
+        <div id="login">
+          
+          <div class="form-box">
+            <h2>लॉग-इन</h2>
+            <form action="/items" method="post">
+              <div class="input-boxL">
+                <span class="icon">&#9993</span>
+                <label>ईमेल</label>
+                <input type="email" required name="Email">
+              </div>
+              <div class="input-boxL">
+                <span class="icon"><i class="fa-solid fa-unlock-keyhole"></i></span>
+                <label>पासवर्ड</label>
+                <input type="password" required name="Password">
+              </div>
+              <div class="remainder-forgot">
+                <label><input type="checkbox">मला आठवण करून द्या.
+              </div>
+              <button type="submit" class="btnLogin">लॉग-इन</button>
+              <div class="login-register">
+                <p>खाते नसल्यास?<a href="signup.htm" class="login-link">साइन अप</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <link rel="shortcut icon" href="images/logo1.png">
+    <title>प्रवास आनंदाचा</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- navbar -->
+    
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#"class="logo">प्रवास<span>आनंदाचा <sup><i class="fa-solid fa-paper-plane"></i></sup></span></a>
+
+    <nav class="navbar">
+      <a href="#home" class="navActive active">मुखपृष्ठ</a>
+      <a href="#gallery" class="navActive">गॅलरी</a>
+      <a href="#services" class="navActive">सेवा</a>
+      <a href="#premium" class="navActive">अधिमूल्य</a>
+      <a href="#review" class="navActive">परीक्षण</a>
+      <a href="#contact" class="navActive">संपर्क</a>
+    </nav>
+    <div class="navbar-container">
+      <a href="#home" id="navbar-slider"></a>
+    </div>
+
+    <div class="headeraIcons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <a href="signup.htm"><i class="fas fa-user" id="login-btn"></i></a>
+    </div>
+
+    <form action="https://holidayz.makemytrip.com/holidays/india/search?fromSearchWidget=true&searchDep=Goa&dest=Goa&destValue=Goa&depCity=New%20Delhi&initd=searchwidget_landing_" class="search-bar">
+      <input type="search" id="searchBar" placeholder="तुमचं पर्यटक स्थळ शोधा . . .">
+      <label for="searchBar" class ="fas fa-search"></label>
+    </form>
+
+  </header>
+
+
+  <!-- Home Page -->
+
+  <section class="home" id="home">
+    <div class="content">
+      <h3>आपलं प्रिय स्थळ, आमचं नेत्रद्वय !</h3>
+      <p>आमच्यासोबत नवीन स्थळे शोधा, आव्हान संघर्षांत उत्साह भरतो !</p>
+      <br>
+      <a href="#gallery" ><button type="button" class="btnSearch">तुमचं पर्यटक स्थळ शोधा !  <i class="fa-solid fa-location-dot"></i></button></button></a>
+    </div>
+
+    <div class="controls">
+      <span class="vid-btn active" data-src="Videos/vid3.mp4"></span>
+      <span class="vid-btn" data-src="Videos/vid2.mp4"></span>
+      <span class="vid-btn" data-src="Videos/vid1.mp4"></span>
+      <span class="vid-btn" data-src="Videos/vid4.mp4"></span>
+      <span class="vid-btn" data-src="Videos/vid5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+      <video src="Videos/vid3.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+ 
+  </section> 
+
+  <!-- Gallery Page -->
+
+  <section class="gallery" id="gallery">
+
+    <h1 class="heading">
+      <span>गॅ</span>
+      <span>ल</span>
+      <span>री</span> 
+    </h1>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="images/Gateway.jpg" alt="">
+        <div class="content">
+          <h1>गेटवे ऑफ इंडिया</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> मुंबई
+          </h3>
+          <p>गेटवे ऑफ इंडिया मुंबईतील एक ऐतिहासिक प्रमुख द्वार आणि पर्यटकस्थल आहे. या भव्य भवनाचे निर्माण १९२४ मध्ये पूर्ण झाले.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="GateOfIndia.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Akshardham Temple.jpg" alt="">
+        <div class="content">
+          <h1>आक्षरधाम मंदिर</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+          </h3>
+          <p>आक्षरधाम मंदिर हा भारतातील पुणे शहरात आहे, ज्यात आध्यात्मिक गुरु श्री ब्रह्मानंद स्वामींनी आक्षरधाम नावाच्या संस्थानाची स्थापना केली आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="akshardham.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Statue-of-Unity1.jpg" alt="">
+        <div class="content">
+          <h1>स्टॅच्यू ऑफ युनिटी</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> वडोदरा
+          </h3>
+          <p>
+            स्टॅच्यू ऑफ युनिटी हा भारताच्या लोह पुरुष, सरदार वल्लभभाई पटेलांच्या समर्पित आहे. त्याचा उंच केवळ १९२ मीटर आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="statue.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Raigad.jpg" alt="">
+        <div class="content">
+          <h1>रायगड किल्ला</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> रायगड
+          </h3>
+          <p>रायगड किल्ला हा महाराष्ट्रातील एक प्रसिद्ध इतिहासी किल्ला आहे. ते महाराष्ट्राच्या राजाधानी मुंबईच्या पासून उत्तरेकडून आणण्यात येते.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="Raygad.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/arambol_beachGoa.webp" alt="">
+        <div class="content">
+          <h1>आबोला बीच</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> गोवा
+          </h3>
+          <p>
+            आबोला बीच, मुंबईच्या उत्तर किनार्यावर असलेले एक आदर्श पिकनिक स्थळ आहे. या बीचवर बालकांसाठी खेळण्याची सुविधा आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="abolabeach.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/zoo.jpg" alt="">
+        <div class="content">
+          <h1>गोरेवाडा प्राणी उद्यान</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> नागपूर</h3>
+          <p>
+            गोरेवाडा आंतरराष्ट्रीय प्राणी उद्यान, महाराष्ट्रातील नागपूर जिल्ह्यात आहे. ह्या उद्यानाचा विस्तार १९१४ हेक्टर भूमीवर केला गेला आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="gorewada.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/redfort.jpg" alt="">
+        <div class="content">
+          <h1>लाल किल्ला</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> दिल्ली</h3>
+          <p>
+            चंदनी चौक, जुन्या दिल्लीमध्ये असलेलं हे लाल शिलापादपट इंग्रजांच्या आक्रमणांविरुद्ध सुरक्षेसाठी मुघल सम्राट शाह जहांने निर्मित केलेलं आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="redfort.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/taj mahal.jpg" alt="">
+        <div class="content">
+          <h1>ताजमहल</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> आगरा</h3>
+          <p>
+          यमुना नदीच्या किनार्यावर शाह जहाँने आपल्या प्रिय भाविनी मुमताज महलासाठी त्याच्या लाडक्याच्या स्मृतीसाठी बांधलेलं हे विश्वाचं आश्चर्यमय स्थान.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="tajmahal.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/shree mahakaleshwar temple ,ujjain.jpg" alt="">
+        <div class="content">
+          <h1>श्री महाकालेश्वर मंदिर</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> उज्जैन</h3>
+          <p>
+            हिंदूंसाठी पवित्र स्थल मंदिर, ज्यात चालुक्य आणि मराठा शैलीत भगवान शिवाला अर्पित केले गेले आहे, शिव लिंग स्वयंभू म्हणून मानले जाते.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="mahakaleshwarTemple.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Ellora Caves.jpg" alt="">
+        <div class="content">
+          <h1>ऐलोरा लेणीं‌</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> औरंगाबाद</h3>
+          <p>
+            एलोरा गुहांमध्ये बौद्ध, हिंदू आणि जैन मंदिरांच्या संग्रहालयांचा दर्शन घेण्यात आनंदाचं आहे. युनेस्को वेबसाइटनुसार, एलोरा 'प्राचीन भारताच्या सहिष्णुतेचा आधार' दर्शवते.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="Eelora.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/hawa-mahal.jpg" alt="">
+        <div class="content">
+          <h1>हवा महल</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> जयपूर</h3>
+          <p>
+            हवा महाल हे शहराच्या चंद्रमाचे महाल आहे, ज्यात झरोख्यांच्या माध्यमातून अद्वितीय वायुसंचर असते. राजकीय स्त्रियांना जल्लोष बसण्यासाठी निर्मित केलेले आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="havamahal.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Mudumalai National Park.jpg" alt="">
+        <div class="content">
+          <h1>मुदुमलाई राष्ट्रीय उद्यान</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> ऊटी, तमिळनाडु</h3>
+          <p>
+            निलगिरी पर्वतमाळ्यांत स्थित या राष्ट्रीय उद्यानात मसिनागुडी, थेपाकडू, मुदुमलई, कारगुडी आणि नेल्लाकोटा ह्या पाच रेंजेसमध्ये विभाजित आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="mudumulai.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/shirdi waterpark.jpg" alt="">
+        <div class="content">
+          <h1>शिर्डी वॉटर पार्क</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> शिर्डी</h3>
+          <p>
+            साईबाबा मंदिरापासून 10 मिनिटांच्या अंतरावर हे प्रसिद्ध शिर्डी वॉटर पार्क आहे, जे मालपाणी ग्रुपने सुरू केलेले एक प्रकारचे मनोरंजन थीम पार्क आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="ShirdiWater.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/SinhagadFort.jpg" alt="">
+        <div class="content">
+          <h1>सिंहगड किल्ला</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> पुणे</h3>
+          <p>
+            पुण्याच्या नैर्ऋत्येला साधारण २५ कि.मी अंतरावर असणारा हा किल्ला समुद्रसपाटीपासून सुमारे ४४०० फूट उंच आहे, भुलेश्वराच्या रांगेवर स्थित.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="Sihgad Fort.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/MarineDriveMumbai.jpg" alt="">
+        <div class="content">
+          <h1>मरीन ड्राइव्ह</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> मुंबई</h3>
+          <p>
+            मरीन ड्राइव्ह मुंबईतील नरीमन पॉइंटला सुरू होऊन गिरगाव चौपाटी येथे संपतो. या रस्त्यावर समुद्रात टेट्रापॉड्स दगड आहेत.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="Marine Drive.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Trimbakeshwar Temple.jpg" alt="">
+        <div class="content">
+          <h1>त्रंबकेश्वर मंदिर</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> नाशिक</h3>
+          <p>
+           त्र्यंबकेश्वर मंदिर हे भारतातील एक प्राचीन तीर्थस्थान आहे. ह्या मंदिरात स्थित एक ज्योतिर्लिंग म्हणजे सध्याच्या काळातील १२ ज्योतिर्लिंगांपैकी एक आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="Trambakeshvar.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Dudhsagar Waterfalls.jpg" alt="">
+        <div class="content">
+          <h1>दूधसागर धबधबा</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> गोवा</h3>
+          <p>
+            दूधसागर धबधबा हा गोव्यातील मांडवी नदीवरील धबधबा आहे, ज्याचा अंतर पणजीपासून ६० किमी आहे.हा धबधबा मडगाव-बेळगाव लोहमार्गावर आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="DudhSagar.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Della Adventure Park.png" alt="">
+        <div class="content">
+          <h1>डेला आडव्हेंचर पार्क</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> लोणावळा</h3>
+          <p>
+           डेला आडव्हेंचर पार्क हे एक प्रमुख मनोरंजन केंद्र आहे, ज्यात विविध आडव्हेंचर अॅक्टिव्हिटीज आणि अन्य मनोरंजन साधने आहेत.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="DelaAdventure.htm" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Services page -->
+<section class="services" id="services">
+  <h1 class="heading">
+    <span>से</span>
+    <span>वा</span>
+  </h1>
+
+  <div class="ser-container">
+
+    <div class="ser-box">
+      <i class="fa-solid fa-place-of-worship"></i>
+      <h3>जवळच्या पर्यटन स्थळांची माहिती</h3>
+      <p>आपल्या पर्यटनाच्या अभियानासाठी प्रमुख आणि प्रतिष्ठित स्थळांची <br>माहिती, ज्यामुळे आपण सर्वात सुरक्षित आणि अत्यंत आनंदान्वित<br> अनुभव साजरा करू शकता.</p>
+    </div>
+    <div class="ser-box">
+      <i class="fas fa-hotel"></i>
+      <h3>सोयीसमदमिक विश्रांतीगृह</h3>
+      <p>प्रतिष्ठित आणि सर्वात उत्तम सोयीसमदमिक विश्रांतीगृहांची सूचना,<br> ज्यामुळे आपण संपूर्ण सामान्य संपत्तीत आत्मसातील स्थिती<br> साजरा करू शकता.
+      </p>
+    </div>
+    <div class="ser-box">
+      <i class="fas fa-utensils"></i>
+      <h3>अन्न आणि पेय</h3>
+      <p>विश्वस्त आणि सुसंस्कृत भोजन स्थळांची सूचना, ज्यामुळे आपण<br> उत्तम आहार आणि पेय प्राप्त करू शकता.</p>
+    </div>
+  
+    <div class="ser-box">
+    <i class="fa-solid fa-user-tie"></i>
+    <h3>स्थानिक मार्गदर्शक</h3>
+    <p>प्रमुख आणि प्रतिष्ठित स्थानिक मार्गदर्शकांची सूचना, ज्यामुळे आपण <br>आपल्या अभियानाच्या लक्ष्यात पूर्णतः सहाय्य करू शकता.</p>
+  </div>
+  </div>
+</section>
+ 
+<!-- premium page -->
+<section class="premium1" id="premium">
+  <h1 class="heading">
+    <span>अ</span>
+    <span>धि</span>
+    <span>मू</span>
+    <span>ल्य</span>
+  </h1>
+  <div class="page-container premium">
+    <div class="Page-box">
+        
+        <div class="content">
+          <h1><i class="fa-solid fa-calendar-days"> 1 आठवड्यासाठी</i></h1>
+          <h2><i class="fa-solid fa-indian-rupee-sign"> 300</i></h2>
+          
+          <h3><i class="fa-solid fa-square-check"></i> सर्व स्थानांची माहिती</h3>
+          <h3><i class="fa-solid fa-square-check"></i> उच्च गतीत आणि सर्वांत सर्वोत्तम अनुभव</h3>
+          <h3><i class="fa-solid fa-square-check"></i> समावेशी तात्काळ सहाय्य</h3>
+        
+          <a href="" class="btn">खरेदी करा</a>
+        </div>
+      </div>
+
+<div class="Page-box ">
+    
+    <div class="content">
+      <h1><i class="fa-solid fa-calendar-days"> 15 दिवसांसाठी</i></h1>
+      <h2><i class="fa-solid fa-indian-rupee-sign"> 750</i></h2>
+      <h3><i class="fa-solid fa-square-check"></i> सर्व स्थानांची माहिती</h3>
+      <h3><i class="fa-solid fa-square-check"></i> उच्च गतीत आणि सर्वांत सर्वोत्तम अनुभव</h3>
+      <h3><i class="fa-solid fa-square-check"></i> समावेशी तात्काळ सहाय्य</h3>
+      
+      <a href="" class="btn">खरेदी करा</a>
+    </div>
+  </div>
+  <div class="Page-box">
+    
+    <div class="content">
+      <h1><i class="fa-solid fa-calendar-days"> 1 महिन्याचा</i></h1>
+      <h2><i class="fa-solid fa-indian-rupee-sign"> 1500</i></h1>
+        <h3><i class="fa-solid fa-square-check"></i> सर्व स्थानांची माहिती</h3>
+        <h3><i class="fa-solid fa-square-check"></i> उच्च गतीत आणि सर्वांत सर्वोत्तम अनुभव</h3>
+        <h3><i class="fa-solid fa-square-check"></i> समावेशी तात्काळ सहाय्य</h3>
+      
+      
+      <a href="" class="btn">खरेदी करा</a>
+    </div>
+  </div>
+</div>  
+ 
+</section>
+
+<!-- Review Page -->
+<section class="review" id="review">
+
+  <h1 class="heading">
+    <span>प</span>
+    <span>री</span>
+    <span>क्ष</span>
+    <span>ण</span>
+    
+  </h1>
+
+    <div class=" swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/re1.jpg" alt="">
+            <h3>मोहित पाटील</h3>
+            <p>माझ्या प्रवासाची योजना बनवण्याच्या साठी तुमची वेबसाइट मला अद्याप मदत करते. सर्व आवश्यक संदर्भ माहिती सोप्या <br>पद्धतीने मिळते.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/re4.png" alt="">
+            <h3>सानिका साळुंखे</h3>
+            <p>तुमच्या वेबसाइटवर सर्व स्थळांच्या संदर्भात जवळचे अवस्थान मिळतात, त्यामुळे सफर करण्याची योजना करणे <br>सोपे आहे.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/re2.jpg" alt="">
+            <h3>चेतन पवार</h3>
+            <p>तुमची वेबसाइट वापरून मला प्रवास करण्यासाठी जी आवश्यक माहिती आहे, ती मिळते. यामध्ये तापमान, खाद्य, अस्वच्छता याबद्दली सर्व माहिती मिळते.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/re5.jpeg" alt="">
+            <h3>हर्षाली मराठे</h3>
+            <p>तुमच्या वेबसाइटवर उपलब्ध होटेल्सची सूची बद्दल मला अशीच अचूक माहिती मिळते, ज्यामुळे होटेल निवडणे <br>सोपे आहे.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/re3.jpg" alt="">
+            <h3>चेतन पाटील</h3>
+            <p>होटेल्स आणि खाद्याच्या ठिकाणी खूप छान आणि बजेट-मित्रपूर्ण पर्याय आहेत. यामध्ये छोट्या-मोठ्या होटेल्स सहित विविध परिसरांचे निवासस्थान उपलब्ध आहेत.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/re6.jpg" alt="">
+            <h3>निकिता खैरनार</h3>
+            <p>तुमची वेबसाइट खूप छान आहे! ती नजीकच्या स्थळांची माहिती आणि खासगी गर्मी व शीतलता याबद्दल माहिती <br>देणारी आहे.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+<!-- Contack page -->
+<section class="contact" id="contact" >
+  <h1 class="heading">
+    <span>सं</span>
+    <span>प</span>
+    <span>र्क</span>
+  </h1>
+
+  <div class="con-page">
+    <div class="image">
+      <img src="/images/cont-page.png" alt="">
+    </div>
+
+    
+      <form action="/items" method="post">
+        <div class="input-box">
+          <input type="text" placeholder="नाव" class="Name" name="UserName">
+          <input type="text" placeholder="ईमेल" class="email" name="Email">
+          <input type="text" placeholder="मोबाईल क्र." class="Name" name="Phone_no">
+          <input type="text" placeholder="विषय" class="Subject" name="Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="3" placeholder="संदेश" name="Message"></textarea>
+      <a href="#" class="btn-con">संदेश पाठवा</a>
+      </form>
+  </div>
+</section>
+<!-- Action on gallery page -->
+<section class="action container-fluid">
+  <div class="content">
+    <h3>आपलं प्रिय स्थळ, आमचं नेत्रद्वय !</h3>
+    <p>आमच्यासोबत नवीन स्थळे शोधा, आव्हान संघर्षांत उत्साह भरतो !</p>
+    <br>
+    <a href="#gallery" ><button type="button" class="btnSearch">तुमचं पर्यटक स्थळ शोधा !  <i class="fa-solid fa-location-dot"></i></button></button></a>
+  </div>
+</section>
+
+<!-- footer -->
+<section class="footer  ">
+  <a href="https://in.linkedin.com/in/chetan-pawar-a023a2240"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+  <a href="https://github.com/Chetan-Vilas-Pawar"><i class="fa-brands fa-github fa-lg"></i></a>
+  <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+  <a href=""><i class="fa-solid fa-envelope fa-lg"></i></a>
+  <br>
+  <a href="https://in.linkedin.com/in/chetan-pawar-a023a2240"><p>© Copyright 2024 Chetan Pawar.</p></a>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

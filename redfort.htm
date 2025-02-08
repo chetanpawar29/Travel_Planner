@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+   <link rel="shortcut icon" href="images/logo1.png">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>लाल किल्ला</title>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <a href="#"class="logo">प्रवास<span>आनंदाचा <sup><i class="fa-solid fa-paper-plane"></i></sup></span></a>
+    
+        <nav class="navbar">
+          <a href="#info" class="navActive active">माहिती</a>
+          <a href="#nearPlaces" class="navActive">जवळचे स्थळ</a>
+          <a href="#hotel" class="navActive">हॉटेल</a>
+          <a href="#restaurants" class="navActive">रेस्टॉरंट्स</a>
+          <a href="#contact" class="navActive">संपर्क</a>
+        </nav>
+        <div class="navbar-container">
+          <a href="#home" id="navbar-slider"></a>
+        </div>
+    
+        <div class="headeraIcons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    
+        <form action="" class="search-bar">
+          <input type="search" id="searchBar" placeholder="तुमचं पर्यटक स्थळ शोधा . . .">
+          <label for="searchBar" class ="fas fa-search"></label>
+        </form>
+    
+      </header>
+
+      <section class="info" id="info">
+        <div class="img">
+            <img src="images/redfort.jpg" alt="">
+        </div>
+        <div class="cardInfo">
+            <h2>लाल किल्ला हा दिल्लीतील एक प्रसिद्ध मुघलकालीन किल्ला आहे. याचे नाव लाल संगमरवरी दगडावरून पडलेले आहे. हा किल्ला यमुना नदीच्या किनारी बांधला गेला.दिल्लीच्या ऐतिहासिक, जुन्या दिल्ली भागात लाल किल्ला लाल वाळूच्या खडकांनी बनलेला आहे.</h2>
+        </div>
+    </section>
+
+    <section class="nearPlaces" id="nearPlaces">
+        <h1 class="heading">
+            <span>ज</span>
+            <span>व</span>
+            <span>ळ</span>
+            <span>चे</span>
+            <span>     स्थ</span>
+            <span>ळ</span>
+          </h1>
+
+    <div class="page-container">
+        <div class="Page-box">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div class="content">
+              <h1>राज घाट</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+              <p>राजघाट हे नवी दिल्लीत यमुना नदीच्या तीरावर असलेले महात्मा गांधींचे समाधिस्थळ आहे. </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://mr.wikipedia.org/wiki/%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%98%E0%A4%BE%E0%A4%9F" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+    
+    <div class="Page-box">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div class="content">
+          <h1>चाँदनी चौक</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+          </h3>
+          <p>1,560 दुकाने असलेला हा बाजार 40 यार्ड रुंद बाय 1,520 यार्ड लांब होता.पूल असल्यामुळे बाजाराला भव्यता प्राप्त झाली.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://mr.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%A8%E0%A5%80_%E0%A4%9A%E0%A5%8C%E0%A4%95" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Humayun%27s_Tomb_by_Shagil_Kannur_%281%29.jpg/330px-Humayun%27s_Tomb_by_Shagil_Kannur_%281%29.jpg" alt="">
+        <div class="content">
+          <h1>हमायूं का मकबरा </h1>
+          <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+          </h3>
+          <p>हुमायूँचं मकबरा इमारत परिसर मुगळ वास्तूकला संवादळ केलेलं एक स्मारक आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A5%82%E0%A4%81_%E0%A4%95%E0%A4%BE_%E0%A4%AE%E0%A4%95%E0%A4%AC%E0%A4%B0%E0%A4%BE" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+    </div>  
+    </section>
+
+    <section class="hotel" id="hotel">
+        <h1 class="heading">
+            <span>हॉ</span>
+            <span>टे</span>
+            <span>ल</span>
+        </h1>
+
+        <div class="page-container">
+            <div class="Page-box">
+              <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-3TCYUAQx1kImvxsRuXJ3ZysAk93pYn4nKla2jFhk4dhX6WY5" alt="">
+              <div class="content">
+                <h1>हॉटेल तारा पॅलेस</h1>
+             <h3>₹2,359 <del> ₹3,600</del></h3>
+               
+                <p>Per Night</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201607221447201693&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTDEL&cmp=SEO&country=IN&lat=28.64967&lng=77.24345&locusId=CTDEL&locusType=city&mmPoiTag=POI%7CRed%20Fort%7CPOI47272%7C28.65068%7C77.24102&modifyDates=true&rank=1&roomStayQualifier=2e0e&searchText=Red%20Fort%2C%20Delhi&seoDS=true&seoReq=1714835504508&mtkeys=1754608733659697265y" class="btn">बुक करा</a>
+              </div>
+            </div>
+            <div class="Page-box">
+              <img src="https://r1imghtlak.mmtcdn.com/bf58f566754a11edb2950a58a9feac02.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,85&output-format=webp" alt="">
+              <div class="content">
+                <h1>हॉटेल रॉयल अफगान</h1>
+                <h3>₹ 1,523 <del>₹ 2,299</del></h3>
+               
+                <p>Per Night</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202212061446457104&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTDEL&cmp=SEO&country=IN&lat=28.6459&lng=77.24028&locusId=CTDEL&locusType=city&mmPoiTag=POI%7CRed%20Fort%7CPOI47272%7C28.65068%7C77.24102&modifyDates=true&rank=2&roomStayQualifier=2e0e&searchText=Red%20Fort%2C%20Delhi&seoDS=true&seoReq=1714835504508&mtkeys=9016456468819752840" class="btn">बुक करा</a>
+              </div>
+            </div>
+            <div class="Page-box">
+              <img src="https://r1imghtlak.mmtcdn.com/90f6f1e4e9d511e580a8001ec9b85d13.jpg?&output-quality=75&downsize=520:350&crop=520:350;3,0&output-format=webp" alt="">
+              <div class="content">
+                <h1>हॉटेल अल गुलजार</h1>
+                 <h3>₹ 6,926 <del>₹ 10,000</del></h3>
+               
+                <p>Per Night</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201705020124191973&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTDEL&cmp=SEO&country=IN&lat=28.65008&lng=77.23508&locusId=CTDEL&locusType=city&mmPoiTag=POI%7CRed%20Fort%7CPOI47272%7C28.65068%7C77.24102&modifyDates=true&rank=11&roomStayQualifier=2e0e&searchText=Red%20Fort%2C%20Delhi&seoDS=true&seoReq=1714835504508&viewType=BUDGET&mtkeys=-4314444354201922983" class="btn">बुक करा</a>
+              </div>
+            </div>
+            <div class="Page-box">
+              <img src="https://r1imghtlak.mmtcdn.com/5c4146ae732a11e7b7090a4cef95d023.jpg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=webp" alt="">
+              <div class="content">
+                <h1>हॉटेल ब्लूमरूम्स</h1>
+                 <h3>₹ 4,600 <del>₹ 4,600</del></h3>
+               
+                <p>Per Night</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201305071046536570&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTDEL&cmp=SEO&country=IN&lat=28.64547&lng=77.21773&locusId=CTDEL&locusType=city&mmPoiTag=POI%7CRed%20Fort%7CPOI47272%7C28.65068%7C77.24102&modifyDates=true&rank=22&roomStayQualifier=2e0e&searchText=Red%20Fort%2C%20Delhi&seoDS=true&seoReq=1714835504508&mtkeys=-4704547877505884082" class="btn">बुक करा</a>
+              </div>
+            </div>
+            <div class="Page-box">
+              <img src="https://r1imghtlak.mmtcdn.com/7e2391b4598a11eca0860a58a9feac02.jpg?&output-quality=75&downsize=520:350&crop=520:350;3,0&output-format=webp" alt="">
+              <div class="content">
+                <h1>हॉटेल अजंता</h1>
+                 <h3>₹ 2,258 <del>₹ 5,906</del></h3>
+               
+                <p>Per Night</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200701121640393527&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTDEL&cmp=SEO&country=IN&lat=28.64575&lng=77.21592&locusId=CTDEL&locusType=city&mmPoiTag=POI%7CRed%20Fort%7CPOI47272%7C28.65068%7C77.24102&modifyDates=true&rank=27&roomStayQualifier=2e0e&searchText=Red%20Fort%2C%20Delhi&seoDS=true&seoReq=1714835504508&viewType=BUDGET&mtkeys=7958062897493555058" class="btn">बुक करा</a>
+              </div>
+            </div>
+            <div class="Page-box">
+              <img src="https://r1imghtlak.mmtcdn.com/2e6dee22-ee45-4a05-8d50-d800058b46b0.jpg?&output-quality=75&downsize=520:350&crop=520:350;9,0&output-format=webp" alt="">
+              <div class="content">
+                <h1>हॉटेल नॉर्दन पॅलेस</h1>
+                 <h3>₹ 1,523 <del>₹ 3,500 </del></h3>
+               
+                <p>Per Night</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202404121303425682&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTDEL&cmp=SEO&country=IN&lat=28.64074&lng=77.21672&locusId=CTDEL&locusType=city&mmPoiTag=POI%7CRed%20Fort%7CPOI47272%7C28.65068%7C77.24102&modifyDates=true&rank=28&roomStayQualifier=2e0e&searchText=Red%20Fort%2C%20Delhi&seoDS=true&seoReq=1714835504508&mtkeys=2067146017666954873" class="btn">बुक करा</a>
+              </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="restaurants" id="restaurants">
+        <h1 class="heading">
+            <span>रे</span>
+            <span>स्टॉ</span>
+            <span>रं</span>
+            <span>ट्</span>
+            <span>स</span>
+          </h1>
+          <div class="page-container">
+          <div class="Page-box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-o/02/a3/ee/b4/lotus-cafe-all-day-dining.jpg" alt="">
+            <div class="content">
+              <h1>लोटस कॅफे</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+            
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d1138825-Reviews-Lotus_Cafe-Mumbai_Maharashtra.html" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+          <div class="Page-box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/59/55/46/by-the-mekong-restaurant.jpg?w=1200&h=-1&s=1" alt="">
+            <div class="content">
+              <h1>मेकाँग द्वारा</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+              
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d6929570-Reviews-By_the_Mekong-Mumbai_Maharashtra.html#/media/6929570/559502662:p/?albumid=101&type=0&category=101" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+          <div class="Page-box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/19/4c/ca/d8/20190916-154549-largejpg.jpg" alt="">
+            <div class="content">
+              <h1>मनुहार- परंपरेची चव</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+             
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d15532332-Reviews-Manuhaar_The_Taste_of_Tradition-Mumbai_Maharashtra.html" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+          <div class="Page-box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/0c/3d/2e/af/vibrant-colors.jpg" alt="">
+            <div class="content">
+              <h1>श्री ठाकर भोजनालय</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+             
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%B0%E0%A4%A7%E0%A4%BE%E0%A4%AE_%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0,_%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+          <div class="Page-box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/88/42/96/20200107-211941-largejpg.jpg" alt="">
+            <div class="content">
+              <h1>पेशवे मंडप</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+             
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d5913048-Reviews-Peshwa_Pavilion-Mumbai_Maharashtra.html" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+          <div class="Page-box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/14/3a/6c/44/lake-view-cafe.jpg" alt="">
+            <div class="content">
+              <h1>लेक व्ह्यू कॅफे</h1>
+              <h3><i class="fas fa-map-marker-alt"></i> दिल्ली
+              </h3>
+             
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="https://www.tripadvisor.in/Restaurant_Review-g304554-d1957837-Reviews-Lake_View_Cafe-Mumbai_Maharashtra.html" class="btn">अधिक पहा</a>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="action container-fluid" id="contact">
+        <div class="content">
+          <h3>आपलं प्रिय स्थळ, आमचं नेत्रद्वय !</h3>
+          <p>आमच्यासोबत नवीन स्थळे शोधा, आव्हान संघर्षांत उत्साह भरतो !</p>
+          <br>
+          <a href="index.htm" ><button type="button" class="btnSearch">तुमचं पर्यटक स्थळ शोधा !  <i class="fa-solid fa-location-dot"></i></button></button></a>
+        </div>
+      </section>
+      
+      <!-- footer -->
+      <section class="footer  ">
+        <a href="https://in.linkedin.com/in/chetan-pawar-a023a2240"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/Chetan-Vilas-Pawar"><i class="fa-brands fa-github fa-lg"></i></a>
+        <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+        <a href=""><i class="fa-solid fa-envelope fa-lg"></i></a>
+        <br>
+        <a href="https://in.linkedin.com/in/chetan-pawar-a023a2240"><p>© Copyright 2024 Chetan Pawar.</p></a>
+      
+      </section>
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="script.js"></script>
+      </body>
+      </html>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="script.js"></script>
+      </body>
+      </html> 
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

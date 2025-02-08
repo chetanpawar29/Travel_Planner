@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+   <link rel="shortcut icon" href="images/logo1.png">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>ताजमहल</title>
+</head>
+<body>
+   
+    
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#"class="logo">प्रवास<span>आनंदाचा <sup><i class="fa-solid fa-paper-plane"></i></sup></span></a>
+
+    <nav class="navbar">
+      <a href="#info" class="navActive active">माहिती</a>
+      <a href="#nearPlaces" class="navActive">जवळचे स्थळ</a>
+      <a href="#hotel" class="navActive">हॉटेल</a>
+      <a href="#restaurants" class="navActive">रेस्टॉरंट्स</a>
+      <a href="#contact" class="navActive">संपर्क</a>
+    </nav>
+    <div class="navbar-container">
+      <a href="#home" id="navbar-slider"></a>
+    </div>
+
+    <div class="headeraIcons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar">
+      <input type="search" id="searchBar" placeholder="तुमचं पर्यटक स्थळ शोधा . . .">
+      <label for="searchBar" class ="fas fa-search"></label>
+    </form>
+
+  </header>
+
+<section class="info" id="info">
+    <div class="img">
+        <img src="images/taj mahal.jpg" alt="">
+    </div>
+    <div class="cardInfo">
+        <h2>ताजमहाल इमारत गटाचे वैशिष्ट्य म्हणजे ते पूर्णपणे सममितीय आहे. त्याचे बांधकाम वर्ष १६४८ मध्ये जवळजवळ पूर्ण झाले होते. उस्ताद अहमद लाहोरी हे बऱ्याचदा मुख्य डिझाइनर मानले जातात. मुगल बादशाहशहाजहान याने त्याच्या मुमताज महल या प्रिय पत्नीच्या मृत्युपश्चात तिच्या स्मृती प्रीत्यर्थ हे शुभ्र संगमरवरात स्मारक उभारले.</h2>
+    </div>
+</section>
+<section class="nearPlaces" id="nearPlaces">
+    <h1 class="heading">
+        <span>ज</span>
+        <span>व</span>
+        <span>ळ</span>
+        <span>चे</span>
+        <span>     स्थ</span>
+        <span>ळ</span>
+      </h1>
+  <div class="page-container">
+      <div class="Page-box">
+        <img src="https://wallpapercave.com/wp/wp4909618.jpg" alt="">
+        <div class="content">
+          <h1>आग्रा किल्ला</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+          </h3>
+          <p>आग्रा किल्ला ( किला आग्रा ) हा आग्रा शहरातील एक ऐतिहासिक किल्ला आहे, आणि आग्राचा लाल किल्ला म्हणूनही ओळखला जातो.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Agra_Fort" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://images.freeimages.com/images/large-previews/c64/indian-village-1520474.jpg"alt="">
+        <div class="content">
+          <h1>फत्तेपूर सिक्री</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+          </h3>
+          <p>फत्तेपूर सिक्री हे मुघल सम्राट अकबराने आग्र्याजवळ सीक्री या खेडयाजवळ नवीन राजधानी १५६९-७० मध्ये वसविली.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://mr.wikipedia.org/wiki/%E0%A4%AB%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%87%E0%A4%AA%E0%A5%82%E0%A4%B0_%E0%A4%B8%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%80" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://th.bing.com/th/id/OIP.f1aawYuEcjkQfa3ARKdy3QHaE6?rs=1&pid=ImgDetMain" alt="">
+        <div class="content">
+          <h1>राम बाग</h1>
+          <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+          </h3>
+          <p>भारताचं सर्वात प्राचीन मुघल उद्यान, आरामबाग, मुघळ शासक बाबरांनी सन १५२८ मध्ये बांधलं होतं. हा उद्यान आगरा शहरात ताजमहलपासून २.३४ किलोमीटर उत्तरेकडे स्थित आहे.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%AC%E0%A4%BE%E0%A4%97" class="btn">अधिक पहा</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="hotel" id="hotel">
+    <h1 class="heading">
+        <span>हॉ</span>
+        <span>टे</span>
+        <span>ल</span>
+       
+      </h1>
+      <div class="page-container">
+      <div class="Page-box">
+        <img src="https://r1imghtlak.mmtcdn.com/01773a66643711e58a8436cfdd80c293.jfif?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=webp" alt="">
+        <div class="content">
+        <h1>हॉटेल ताज प्लाझा</h1>
+       <h3>₹1,140 <del>₹1,500</del></h3>
+         
+          <p>Per Night</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200701131525119661&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTAGR&cmp=SEO&country=IN&lat=27.16873&lng=78.04988&locusId=CTAGR&locusType=city&mmPoiTag=POI%7CTaj%20Mahal%7CPOI65100%7C27.1751448%7C78.0421422&modifyDates=true&rank=6&roomStayQualifier=2e0e&searchText=Taj%20Mahal%2C%20Agra&seoDS=true&seoReq=1714778450668&mtkeys=6171713228088210559" class="btn">बुक करा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://r1imghtlak.mmtcdn.com/c6aaf76640f011eeac1d0a58a9feac02.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,19&output-format=webp" alt="">
+        <div class="content">
+          <h1>हॉटेल शीला</h1>
+          <h3>₹735 <del>₹1,200</del></h3>
+         
+          <p>Per Night</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201408081514177027&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTAGR&cmp=SEO&country=IN&lat=27.1713&lng=78.04454&locusId=CTAGR&locusType=city&mmPoiTag=POI%7CTaj%20Mahal%7CPOI65100%7C27.1751448%7C78.0421422&modifyDates=true&rank=1&roomStayQualifier=2e0e&searchText=Taj%20Mahal%2C%20Agra&seoDS=true&seoReq=1714778450668&viewType=BUDGET&mtkeys=8545812748491664954" class="btn">बुक करा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://r1imghtlak.mmtcdn.com/71cf72d4709111e7a2500a4cef95d023.jpg?output-quality=75&downsize=*:350&crop=520:350;81,0&output-format=webp" alt="">
+        <div class="content">
+          <h1>
+            हॉटेल ताज रिझॉर्ट्स</h1>
+           <h3>₹ 3,828<del>₹ 9,999</del></h3>
+         
+          <p>Per Night</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201101271820022924&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTAGR&cmp=SEO&country=IN&lat=27.16828&lng=78.05103&locusId=CTAGR&locusType=city&mmPoiTag=POI%7CTaj%20Mahal%7CPOI65100%7C27.1751448%7C78.0421422&modifyDates=true&rank=3&roomStayQualifier=2e0e&searchText=Taj%20Mahal%2C%20Agra&seoDS=true&seoReq=1714778450668&mtkeys=-1534776182553415851" class="btn">बुक करा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/room-imgs/200708231745428706-3674430-ba4d16f8c31c11e9a3560aec9a8a582c.jpg?output-quality=75&downsize=*:350&crop=520:350;2,0&output-format=webp" alt="">
+        <div class="content">
+          <h1>हॉटेल सिद्धार्थ</h1>
+           <h3>₹ 2,592 <del>₹ 3,600</del></h3>
+         
+          <p>Per Night</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200708231745428706&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTAGR&cmp=SEO&country=IN&lat=27.16936&lng=78.04063&locusId=CTAGR&locusType=city&mmPoiTag=POI%7CTaj%20Mahal%7CPOI65100%7C27.1751448%7C78.0421422&modifyDates=true&rank=2&roomStayQualifier=2e0e&searchText=Taj%20Mahal%2C%20Agra&seoDS=true&seoReq=1714778450668&viewType=BUDGET&mtkeys=-2243359177597369092" class="btn">बुक करा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://r1imghtlak.mmtcdn.com/f83e1677-a022-4788-83b7-878ceb0a142d.jpg?output-quality=75&downsize=*:350&crop=520:350;0,79&output-format=webp" alt="">
+        <div class="content">
+          <h1>हॉटेल सानिया</h1>
+           <h3>₹ 1,296<del>₹ 2,250</del></h3>
+         
+          <p>Per Night</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?_uCurrency=INR&checkin=10172024&checkout=10182024&city=CTAGR&cmp=SEO&country=IN&hotelId=20111109181543240&lat=27.16925&lng=78.04338&locusId=CTAGR&locusType=city&mmPoiTag=POI%7CTaj%20Mahal%7CPOI65100%7C27.1751448%7C78.0421422&modifyDates=true&mtkeys=6822330478426359275&rank=9&roomStayQualifier=2e0e&searchText=Taj%20Mahal%2C%20Agra&seoDS=true&seoReq=1714778450668&viewType=BUDGET" class="btn">बुक करा</a>
+        </div>
+      </div>
+      <div class="Page-box">
+        <img src="https://r1imghtlak.mmtcdn.com/4a01da3e1a0211ecaf400a58a9feac02.jpeg?&output-quality=75&downsize=520:350&crop=520:350;0,20&output-format=webp" alt="">
+        <div class="content">
+          <h1>भवना हॉटेल</h1>
+           <h3>₹ 1,062 <del>₹ 1,250</del></h3>
+         
+          <p>Per Night</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202109212032117674&_uCurrency=INR&checkin=10182024&checkout=10192024&city=CTAGR&cmp=SEO&country=IN&lat=27.16515&lng=78.0561&locusId=CTAGR&locusType=city&modifyDates=true&rank=11&roomStayQualifier=2e0e&searchText=Taj%20Mahal%2C%20Agra&seoDS=true&seoReq=1714778450668&mtkeys=-5557314627804639125" class="btn">बुक करा</a>
+        </div>
+      </div>
+      </div>
+</section>
+
+<section class="restaurants" id="restaurants">
+  <h1 class="heading">
+      <span>रे</span>
+      <span>स्टॉ</span>
+      <span>रं</span>
+      <span>ट्</span>
+      <span>स</span>
+    </h1>
+    <div class="page-container">
+    <div class="Page-box">
+      <img src="https://r1imghtlak.mmtcdn.com/acc7d74d-875f-4e9f-aa99-21c1ee739c4b.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,85&output-format=webp" alt="">
+      <div class="content">
+        <h1>माया रेस्टॉरंट</h1>
+        <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+        </h3>
+       
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="https://www.makemytrip.com/hotels/maya_hotel_and_restaurent-details-agra.html" class="btn">अधिक पहा</a>
+      </div>
+    </div>
+    <div class="Page-box">
+      <img src="https://hblimg.mmtcdn.com/content/hubble/img/agra/mmt/activities/m_activities_agra_thor_the_party_world_1_l_385_514.jpg" alt="">
+      <div class="content">
+        <h1>थोर द पार्टी वर्ल्ड</h1>
+        <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+        </h3>
+       
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="https://www.makemytrip.com/tripideas/attractions/thor-the-party-world" class="btn">अधिक पहा</a>
+      </div>
+    </div>
+    <div class="Page-box">
+      <img src="https://hblimg.mmtcdn.com/content/hubble/img/agra/mmt/activities/m_activities_agra_pinch_of_spice_3_l_457_609.jpg" alt="">
+      <div class="content">
+        <h1>पिंच ऑफ़ स्पायस</h1>
+        <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+        </h3>
+       
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="https://www.tripadvisor.in/Restaurant_Review-g304551-d8052069-Reviews-Thyme-New_Delhi_National_Capital_Territory_of_Delhi.html#photos;aggregationId=&albumid=101&filter=7&ff=340387586" class="btn">अधिक पहा</a>
+      </div>
+    </div>
+    <div class="Page-box">
+      <img src="https://hblimg.mmtcdn.com/content/hubble/img/Agra/mmt/activities/m_agra_joney_s%20place_activities_l_400_640.jpg" alt="">
+      <div class="content">
+        <h1>जोनीचं स्थान</h1>
+        <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+        </h3>
+       
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="https://www.makemytrip.com/tripideas/attractions/joney's-place" class="btn">अधिक पहा</a>
+      </div>
+    </div>
+    <div class="Page-box">
+      <img src="https://hblimg.mmtcdn.com/content/hubble/img/agra/mmt/activities/m_activities_agra_esphahan_1_l_480_640.jpg" alt="">
+      <div class="content">
+        <h1>एस्फहान</h1>
+        <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+        </h3>
+       
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="https://www.makemytrip.com/tripideas/placeAndActivity/trip?contentId=a8323fe7-c641-4eef-b576-6aaa4e3915af&autoSuggestTile=&srcPoiId=&destPoiId=5d807ac5c56c0036ccd05d15&prev=" class="btn">अधिक पहा</a>
+      </div>
+    </div>
+    <div class="Page-box">
+      <img src="https://hblimg.mmtcdn.com/content/hubble/img/Agra/mmt/activities/m_agra_Glassy%20bar_activities_l_400_640.jpg" alt="">
+      <div class="content">
+        <h1>ग्लासी बार</h1>
+        <h3><i class="fas fa-map-marker-alt"></i> आग्रा
+        </h3>
+       
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="https://www.makemytrip.com/tripideas/attractions/glassy-bar" class="btn">अधिक पहा</a>
+      </div>
+    </div>
+    </div>
+</section>
+<section class="action container-fluid" id="contact">
+  <div class="content">
+    <h3>आपलं प्रिय स्थळ, आमचं नेत्रद्वय !</h3>
+    <p>आमच्यासोबत नवीन स्थळे शोधा, आव्हान संघर्षांत उत्साह भरतो !</p>
+    <br>
+    <a href="index.htm" ><button type="button" class="btnSearch">तुमचं पर्यटक स्थळ शोधा !  <i class="fa-solid fa-location-dot"></i></button></button></a>
+  </div>
+</section>
+
+<!-- footer -->
+<section class="footer  ">
+  <a href="https://in.linkedin.com/in/chetan-pawar-a023a2240"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+  <a href="https://github.com/Chetan-Vilas-Pawar"><i class="fa-brands fa-github fa-lg"></i></a>
+  <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+  <a href=""><i class="fa-solid fa-envelope fa-lg"></i></a>
+  <br>
+  <a href="https://in.linkedin.com/in/chetan-pawar-a023a2240"><p>© Copyright 2024 Chetan Pawar.</p></a>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
